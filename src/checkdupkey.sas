@@ -7,6 +7,7 @@
 data _checked_dupkey_;
   set &data(keep = &keep_var);
   _tempone_ = 1;
+  obs_no =_n_;
 run;
 %put : data = &data;
 %put : keys = &keys;
