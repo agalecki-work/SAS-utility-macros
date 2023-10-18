@@ -8,7 +8,7 @@ filename src "./src";
 ods listing close;
 
 
-ods html file ="test1.html";
+ods html file ="test1-print.html";
 
 Title "Macro CONTENTS_DATA";
 title2 "By default dataset named CONTENTS is created and printed";
@@ -17,6 +17,6 @@ title2 "By default dataset named CONTENTS is created and printed";
 
 Title "Macro _NOBSDATA_ macro";
 Title2 "Creates _NOBSDATA_ dataset (one row) with NOBS and NVAR";
-Number of observations in SASHELP.CLASS data";
+
 %_nobsdata_(class, libname=sashelp);
 ods html close;
